@@ -1,0 +1,21 @@
+<ng-container *ngIf="account">
+
+  <div class="tools">
+    <button (click)="joinToRoom()">Join</button>
+    <button *ngIf="!account.isGuest() && account.joined" (click)="publish()">Publish</button>
+  </div>
+
+  <div class="room-container">
+    <div #videoContainer class="video-container"></div>
+  </div>
+</ng-container>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+.room-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools {
+  display: flex;
+  box-shadow: 0 2px 5px #aaa;
+  padding: 10px;
+  margin-bottom: 20px;
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

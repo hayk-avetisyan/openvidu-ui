@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-menu {
+  display: flex;
+  box-shadow: 0 2px 5px #aaa;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fields {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 70px;
+  justify-content: space-around;
+
+  input, select {
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+  }
+}
