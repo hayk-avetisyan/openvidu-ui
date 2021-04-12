@@ -29,8 +29,6 @@ export class NetworkService {
       this.http.post<any>(AppConstant.CONNECTION_CREATE_URL, JSON.stringify({roomId, role}))
         .subscribe({
           next(connection) {
-            connection.token = connection.token.replace("127.0.0.1", "127.0.0.1:8091");
-            console.log(connection);
             resolve(connection.token);
           },
           error(error) {

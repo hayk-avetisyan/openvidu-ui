@@ -1,8 +1,8 @@
 <ng-container *ngIf="account">
 
   <div class="tools">
-    <button (click)="joinToRoom()">Join</button>
-    <button *ngIf="!account.isGuest() && account.joined" (click)="publish()">Publish</button>
+    <button *ngIf="!account.joined" (click)="joinToRoom()">Join</button>
+    <button (click)="publish()">Publish</button>
   </div>
 
   <div class="room-container">

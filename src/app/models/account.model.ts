@@ -44,7 +44,7 @@ export class AccountModel {
     this._joined = true;
   }
 
-  joined(): boolean {
+  get joined(): boolean {
     return this._joined;
   }
 
